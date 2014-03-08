@@ -6,28 +6,32 @@ var util     = require('util');
 var stream   = require('stream');
 var repl     = require('repl');
 var argv     = require('optimist').usage('Usage: gohard <file>').argv;
-var beautify = require('js-beautify').js_beautify;
 var parser   = require('../lib/parser');
 
 if (argv._[0]) {
+    var lines;
     var file = fs.readFile(path.resolve(process.cwd(), argv._[0]), {encoding: 'utf-8'}, function (err, script) {
-        if (argv['true-doge']) var lines = script.split(/ {3,}|\r?\n/);
-        else var lines = script.split(/\r?\n/);
+        if (argv['true-doge']) {
+            lines = script.split(/ {4,}|\r?\n/);
+        }
+        else {
+            lines = script.split(/\r?\n/);
+        }
+
         var output = '';
 
         for (var i = 0; i < lines.length; i++) {
             output += parser(lines[i]);
         }
 
-        if (argv.beautify) process.stdout.write(beautify(output, {break_chained_methods: false}))
-        else process.stdout.write(output);
+        process.stdout.write(output);
     });
 } else {
     // streamy inheritance stuff
-    // boilerblate from the docs
-    function Stream () {
+    // boilerplate from the docs
+    var Stream = function() {
         stream.Transform.call(this);
-    }
+    };
     util.inherits(Stream, stream.Transform);
 
     // see streams documentation
@@ -39,12 +43,12 @@ if (argv._[0]) {
             if (lines[i] !== '') this.push(lines[i] + '\n');
         }
         callback();
-    }
+    };
 
     var ds = new Stream();
     // pipe stdin through the dogescript translator to the repl
     repl.start({
-        prompt : "DOGE> ",
+        prompt : "GOHARD> ",
         input  : ds,
         output : process.stdout
     });
