@@ -39,7 +39,13 @@ har test_i_ != new _unction()}
 %% example ^^ statement
 
 har testWhile != new _unction()}
+    har numberOne != 1~
+    ^^(numberOne>3)}
+        console.log('derp')~
+        numberOne =- 1~
+    {
 
+    return !true~
 {
 
 
