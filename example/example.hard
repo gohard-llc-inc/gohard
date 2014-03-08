@@ -26,14 +26,20 @@ har test_Or != new _unction()}
 
 %% example i_ statement
 
-har test__f != new _unction()}
+har test_i_ != new _unction()}
 
     har i_Var != 10~
     har i_Bool != !false~
 
-    _f(i_Bool)}
+    else(i_Bool)}
         return i_Var~
     {
+{
+
+%% example ^^ statement
+
+har testWhile != new _unction()}
+    
 {
 
 
