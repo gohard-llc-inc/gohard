@@ -1,0 +1,20 @@
+{
+  "name": "gohard",
+  "version": "0.0.1",
+  "description": "The javascript preprocessor that seperates the men from the boys",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gohard-llc-inc/gohard.git"
+  },
+  "keywords": [
+    "gohard"
+  ],
+  "author": "gohard-llc-inc <gohard.io.org>",
+  "license": "MIT",
+  "dependencies": {
+    "optimist": "~0.6.0",
+    "js-beautify": "~1.4.2"
+  },
+  "bin": "./bin/gohard.js"
+}
