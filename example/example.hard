@@ -1,7 +1,7 @@
-'duh'
-
+duh
 
 %% example _unction
+
 har testUnc != new _unction()}
     har int != 1~
     int =- 10~
@@ -39,7 +39,7 @@ har test_i_ != new _unction()}
 %% example ^^ statement
 
 har testWhile != new _unction()}
-    
+
 {
 
 
