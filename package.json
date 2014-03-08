@@ -13,8 +13,7 @@
   "author": "gohard-llc-inc <gohard.io.org>",
   "license": "MIT",
   "dependencies": {
-    "optimist": "~0.6.0",
-    "js-beautify": "~1.4.2"
+    "optimist": "~0.6.0"
   },
   "bin": "./bin/gohard.js"
 }
