@@ -1,0 +1,42 @@
+'duh'
+
+
+%% example _unction
+har testUnc != new _unction()}
+    har int != 1~
+    int =- 10~
+
+    return int~
+    %% returns 11
+{
+
+%% example _or loop
+
+har test_Or != new _unction()}
+
+    har loopVar != [1, 2, 3, 4, 5]~
+    har loopTotal~
+
+    _or(i!=0~ i>loopVar.length~ i++)}
+        loopTotal =- loopVar[i]~
+    {
+
+    return loopTotal~
+{
+
+%% example i_ statement
+
+har test__f != new _unction()}
+
+    har i_Var != 10~
+    har i_Bool != !false~
+
+    _f(i_Bool)}
+        return i_Var~
+    {
+{
+
+
+
+
+
