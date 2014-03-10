@@ -1,6 +1,6 @@
 {
   "name": "gohard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The javascript preprocessor that seperates the men from the boys",
   "main": "index.js",
   "repository": {
