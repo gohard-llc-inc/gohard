@@ -7,10 +7,21 @@
     "type": "git",
     "url": "https://github.com/gohard-llc-inc/gohard.git"
   },
+  "scripts": {
+    "test": "istanbul cover _mocha -- test/*.js --reporter list --timeout 100000"
+  },
   "keywords": [
     "gohard"
   ],
-  "author": "gohard-llc-inc <gohard.io.org>",
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "istanbul": "~0.1.44"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "author": "gohard-llc-inc <gohard.io>",
   "license": "MIT",
   "dependencies": {
     "optimist": "~0.6.0"
