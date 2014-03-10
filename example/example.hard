@@ -31,7 +31,7 @@ har test_i_ != new _unction()}
     har i_Var != 10~
     har i_Bool != !false~
 
-    else(i_Bool)}
+    else(i_Bool || true)}
         return i_Var~
     {
 {
