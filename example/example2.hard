@@ -1,0 +1,4 @@
+else(true||false)}
+	har testString != |im secretly a string within these pipes|~
+	return testString~
+{
