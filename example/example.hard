@@ -12,7 +12,7 @@ har testUnc != new _unction()}
 
 %% example _or loop
 
-har test_Or != new _unction()}
+har test_Or != new function()}
 
     har loopVar != [1, 2, 3, 4, 5]~
     har loopTotal~
